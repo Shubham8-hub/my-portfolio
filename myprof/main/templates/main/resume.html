@@ -1,0 +1,435 @@
+{% extends 'main/base.html' %}
+
+
+{% block navbar %}
+
+
+<li class="m-3 hover:text-white">
+    <a href="/" class="block relative p-2 hover:border-2 hover:rounded-[5px]">
+        <span class="">
+            <i class="fas fa-home block text-2xl"></i>
+        </span>
+        <span class="w-auto z-0 visible right-3 whitespace-nowrap px-[1rem] py-4 mt-10 font-ui-tabs">Home
+        </span>
+    </a>
+</li>
+<li class="m-3 hover:text-white">
+    <a href="about" class="block relative p-2 hover:border-2 hover:rounded-[5px]">
+        <span class="">
+            <i class="fas fa-user block text-2xl"></i>
+        </span>
+        <span class="w-auto z-0 visible right-3 whitespace-nowrap px-[1.3rem] py-4 mt-10 font-ui-tabs">About Me
+        </span>
+    </a>
+</li>
+<li class="m-3 text-white">
+    <a href="resume" class="block relative p-2 border-2 rounded-[5px]">
+        <span class="">
+            <!-- <i class="fas fa-university block text-2xl"></i> -->
+            <i class="fas fa-graduation-cap text-2xl"></i>
+        </span>
+        <span class="w-auto z-0 visible right-3 whitespace-nowrap px-[1rem] py-4 mt-10 font-ui-tabs">
+            Resume
+        </span>
+    </a>
+</li>
+<li class="m-3 hover:text-white">
+    <a href="projects" class="block relative p-2 hover:border-2 hover:rounded-[5px]">
+        <span class="">
+            <i class="fas fa-code block text-2xl"></i>
+        </span>
+        <span class="w-auto z-0 visible right-3 whitespace-nowrap px-[1rem] py-4 mt-10 font-ui-tabs">Projects
+        </span>
+    </a>
+</li>
+<li class="m-3 hover:text-white">
+    <a href="contact" class="block relative p-2 hover:border-2 hover:rounded-[5px]">
+        <span class="">
+            <i class="fas fa-address-book block text-2xl"></i>
+        </span>
+        <span class="w-auto z-0 visible right-3 whitespace-nowrap px-[1rem] py-4 mt-10 font-ui-tabs">Contact
+        </span>
+    </a>
+</li>
+<li></li>
+
+
+{% endblock navbar %}
+
+{% block resume %}
+
+<section class="resume-page bg-resume-1  opacity-100 visible z-50 w-full h-screen laptop:max-w-[calc(100%_-_300px)] laptop:float-right laptop:p-[60px] overflow-y-auto  sm:py-12 sm:px-4 ">
+    <div class="res-title inline-block relative pb-4 mb-4">
+        <h2 class="relative z-[1] text-[2.5rem] font-common-heading ">Resume</h2>
+    </div>
+    <div class="section-content">
+        <div class="flex flex-wrap">
+            <div class="laptop:grid laptop:grid-cols-2 laptop:gap-5">
+                <!-- Block-1 Education And Experience -->
+                <div class="block-1 sm:mb-4">
+                    <!-- Education -->
+                    <div class="block-title-1 inline-block relative pb-3 mb-4">
+                        <h3 class="relative laptop:text-[30px] z-[1] sm:text-[25px] font-resume-subhead">Education</h3>
+                    </div>
+                    <div class="timeline ">
+                        <!-- First Education Details -->
+                        <div class="timeline-item relative table-row table-fixed w-full pb-[15px] before:table ">
+                            <div class="left-part w-[30%] table-cell pr-[25px] min-h-full text-right align-top ">
+                                <h5 class="item-year my-1 laptop:text-[10px] leading-3 sm:text-[10px] italic"> 2019-2023</h5>
+                                <span class="item-colname block mb-1 laptop:text-[15px] sm:text-sm font-resume-p-3"> Dy Patil College of
+                                    Engineering</span>
+                                <span class="sm:text-sm font-resume-p-3 italic">Ambi</span>
+                            </div>
+                            <div
+                                class="divider absolute bg-red-1 top-0 left-[31.5%] bottom-0 w-[0.2px] before:table before:mt-1 before:w-4 before:h-4 before:absolute before:-ml-[0.45rem] before:rounded-[10px] before:bg-zinc-700 before:opacity-25 z-0 after:table after:absolute after:mt-2 after:w-2 after:h-2 after:-ml-[0.2rem] after:bg-black after:rounded-[5px] after:z-[1]">
+                            </div>
+                            <div class="right-part w-[70%] table-cell pl-[25px] pb-[2.1rem] pr-[15px] align-top">
+                                <h4 class="mb-[3px] sm:text-[15px] font-resume-p-1">Bachelor of Engineering</h4>
+                                <p class="sm:text-sm font-resume-p-2 laptop:text-[16px]">
+                                    Currently pursuing B.E in Electronics and Telecommunication Engineering 
+                                </p>
+                            </div>
+                        </div>
+                    
+                        <!-- Second Education Details -->
+                        <div class="timeline-item relative table-row table-fixed w-full pb-[15px] before:table ">
+                            <div class="left-part w-[30%] table-cell pr-[25px] min-h-full text-right align-top ">
+                                <h5 class="item-year my-1 laptop:text-[10px] sm:text-[10px] leading-3 italic"> 2017-2019</h5>
+                                <span class="item-colname block mb-1 laptop:text-[15px] sm:text-sm font-resume-p-3 "> SV union High School & J.R College
+                                </span>
+                                <span class="sm:text-sm font-resume-p-3 italic">Pune</span>
+                            </div>
+                            <div
+                                class="divider absolute bg-red-1 top-0 left-[31.5%] bottom-0 w-[0.2px] before:table before:mt-1 before:w-4 before:h-4 before:absolute before:-ml-[0.45rem] before:rounded-[10px] before:bg-zinc-700 before:opacity-25 z-0 after:table after:absolute after:mt-2 after:w-2 after:h-2 after:-ml-[0.2rem] after:bg-black after:rounded-[5px] after:z-[1]">
+                            </div>
+                            <div class="right-part w-[70%] table-cell pl-[25px] pb-[1.4rem] pr-[15px] align-top">
+                                <h4 class="mb-[3px] sm:text-[15px] font-resume-p-1">Maharashtra State Board Of Secondary & Higher Secondary Education</h4>
+                                <p class="sm:text-sm font-resume-p-2 laptop:text-[16px]">
+                                    Completed HSC from Maharashtra State Board, with 73.23%.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Third Education Details -->
+                        <div class="timeline-item relative table-row table-fixed w-full pb-[15px] before:table ">
+                            <div class="left-part w-[30%] table-cell pr-[25px] min-h-full text-right align-top ">
+                                <h5 class="item-year my-1 laptop:text-[10px] leading-3 sm:text-[10px] italic"> 2017</h5>
+                                <span class="item-colname block mb-1 laptop:text-[15px] sm:text-sm font-resume-p-3 "> DC High School</span>
+                                <span class="sm:text-sm font-resume-p-3 italic font-light">Khandala</span>
+                            </div>
+                            <div
+                                class="divider absolute bg-red-1 top-0 left-[31.5%] bottom-0 w-[0.2px] before:table before:mt-1 before:w-4 before:h-4 before:absolute before:-ml-[0.45rem] before:rounded-[10px] before:bg-zinc-700 before:opacity-25 z-0 after:table after:absolute after:mt-2 after:w-2 after:h-2 after:-ml-[0.2rem] after:bg-black after:rounded-[5px] after:z-[1]">
+                            </div>
+                            <div class="right-part w-[70%] table-cell pl-[25px] pb-[2.1rem] pr-[15px] align-top">
+                                <h4 class="mb-[3px] sm:text-[15px] font-resume-p-1">Maharashtra State Board Of Secondary & Higher Secondary Education</h4>
+                                <p class="sm:text-sm font-resume-p-2 laptop:text-[16px]">
+                                    Completed SSC from Maharashtra State Board, with 81.60%.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Education End -->
+                    <!-- White Space -->
+                    <div class="pb-[50px]"></div>
+                    <!-- Experience -->
+                    <div class="block-title-2 inline-block relative pb-3 mb-4">
+                        <h3 class="relative laptop:text-[30px] sm:text-[25px] z-[1] font-resume-subhead ">Experience</h3>
+                    </div>
+                    <div class="timeline-item relative table-row table-fixed w-full pb-[15px] before:table ">
+                        <div class="left-part w-[30%] table-cell pr-[25px] min-h-full text-right align-top ">
+                            <h5 class="item-year my-1 laptop:text-[10px] sm:text-[10px] leading-3 italic"> 2019</h5>
+                            <span class="item-colname block mb-1 laptop:text-[15px] sm:text-sm font-resume-p-3"> Fresher</span>
+                        </div>
+                        <div
+                            class="divider absolute bg-red-1 top-0 left-[31.5%] bottom-0 w-[0.2px] before:table before:mt-1 before:w-4 before:h-4 before:absolute before:-ml-[0.45rem] before:rounded-[10px] before:bg-zinc-700 before:opacity-25 z-0 after:table after:absolute after:mt-2 after:w-2 after:h-2 after:-ml-[0.2rem] after:bg-black after:rounded-[5px] after:z-[1]">
+                        </div>
+                        <div class="right-part w-[70%] table-cell pl-[25px] pr-[15px] align-top">
+                            <h4 class="mb-[3px] sm:text-sm font-resume-p-1">Bachelor of Engineering</h4>
+                            <p class="sm:text-sm font-resume-p-2 laptop:text-[16px]">
+                                Currently I am fresher, but Completed training in Machine Learning and Internet of Things
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Block-2  Skils and Certificate-->
+                <div class="block-2 sm:mt-2">
+                    <!-- Skills -->
+
+                    <!-- Design Skill -->
+                    <div class="block-title-2 inline-block relative pb-3 mb-4">
+                        <h3 class="relative laptop:text-[30px] sm:text-[25px] font-resume-subhead">
+                            Design
+                            <span class="text-red-800">
+                                Skill
+                            </span>
+                        </h3>
+                    </div>
+
+                    <div class="skill-info pb-2 mb-2">
+
+                        <div class="coding-design inline-block relative pb-2 mb-2">
+                            <h3 class="relative laptop:text-[19px] sm:text-[15px] font-resume-d-1">Coding
+                                <span class="text-red-800">
+                                    Design
+                                </span>
+                            </h3>
+                        </div>
+
+                        <!-- skill 1 -->
+                        <div class="skill-heading-1">
+                            <h3 class="text-[13px] leading-[1.1rem] relative float-left mb-1 font-resume-skill italic" >Frontend</h3>
+                            <div class="skill-1-value text-[12px] leading-[1.1rem] relative float-right mb-1 font-resume-skill italic">65%</div>
+                        </div>
+                        <div
+                            class="skill-container-1 relative inline-block border-[1px] border-solid border-border-1 rounded-[8px] box-border h-[10px] w-full mb-[8px]  ">
+                            <div
+                                class="skill-percentage-1 w-[65%] border-[2px] border-solid rounded-[9px] h-2 bg-blue-1 p-0 ">
+                            </div>
+                        </div>
+
+                        <!-- skill 2 -->
+                        <div class="skill-heading-2">
+                            <h3 class="text-[13px] leading-[1.1rem] relative float-left mb-1 font-resume-skill italic ">Backend</h3>
+                            <div class="skill-2-value text-[12px] leading-[1.1rem] relative float-right mb-1 font-resume-skill italic">15%</div>
+                        </div>
+                        <div
+                            class="skill-container-2 relative inline-block border-[1px] border-solid border-border-1 rounded-[8px] box-border h-[10px] w-full mb-[8px]  ">
+                            <div
+                                class="skill-percentage-2 w-[15%] border-[2px] border-solid rounded-[9px] h-2 bg-blue-1 p-0 ">
+                            </div>
+                        </div>
+
+                        <!-- Electronic Design -->
+
+                        <div class="electronic-design inline-block relative pb-2 mb-2">
+                            <h3 class="relative text-[19px] font-resume-d-1">Electronic
+                                <span class="text-red-800">
+                                    Design
+                                </span>
+                            </h3>
+                        </div>
+
+                        <!-- skill 3 -->
+                        <div class="skill-heading-3">
+                            <h3 class="text-[13px] leading-[1.1rem] relative float-left mb-1 font-resume-skill italic">PCB</h3>
+                            <div class="skill-3-value text-[12px] leading-[1.1rem] relative float-right mb-1 font-resume-skill italic">70%</div>
+                        </div>
+                        <div
+                            class="skill-container-3 relative inline-block border-[1px] border-solid border-border-1 rounded-[8px] box-border h-[10px] w-full mb-[8px]  ">
+                            <div
+                                class="skill-percentage-3 w-[70%] border-[2px] border-solid rounded-[9px] h-2 bg-blue-1 p-0 ">
+                            </div>
+                        </div>
+
+                        <!-- skill 4 -->
+                        <div class="skill-heading-4">
+                            <h3 class="text-[13px] leading-[1.1rem] relative float-left mb-1 font-resume-skill italic">IOT</h3>
+                            <div class="skill-4-value text-[12px] leading-[1.1rem] relative float-right mb-1 font-resume-skill italic">55%</div>
+                        </div>
+                        <div
+                            class="skill-container-4 relative inline-block border-[1px] border-solid border-border-1 rounded-[8px] box-border h-[10px] w-full mb-[8px]  ">
+                            <div
+                                class="skill-percentage-4 w-[55%] border-[2px] border-solid rounded-[9px] h-2 bg-blue-1 p-0 ">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Coding Skill -->
+
+                    <div class="block-title-2 inline-block relative pb-3 mb-4">
+                        <h3 class="relative text-[30px] font-resume-subhead">
+                            Coding
+                            <span class="text-red-800">
+                                Skill
+                            </span>
+                        </h3>
+                    </div>
+
+                    <!-- skill 1 -->
+                    <div class="skill-heading-1">
+                        <h3 class="text-[13px] leading-[1.1rem] relative float-left mb-1 font-resume-skill italic">HTML</h3>
+                        <div class="skill-1-value text-[12px] leading-[1.1rem] relative float-right mb-1 font-resume-skill italic">70%</div>
+                    </div>
+                    <div
+                        class="skill-container-1 relative inline-block border-[1px] border-solid border-border-1 rounded-[8px] box-border h-[10px] w-full mb-[8px]  ">
+                        <div
+                            class="skill-percentage-1 w-[70%] border-[2px] border-solid rounded-[9px] h-2 bg-blue-1 p-0 ">
+                        </div>
+                    </div>
+
+                    <!-- skill 2 -->
+                    <div class="skill-heading-2">
+                        <h3 class="text-[13px] leading-[1.1rem] relative float-left mb-1 font-resume-skill italic">CSS</h3>
+                        <div class="skill-2-value text-[12px] leading-[1.1rem] relative float-right mb-1 font-resume-skill italic">45%</div>
+                    </div>
+                    <div
+                        class="skill-container-2 relative inline-block border-[1px] border-solid border-border-1 rounded-[8px] box-border h-[10px] w-full mb-[8px]  ">
+                        <div
+                            class="skill-percentage-1 w-[45%] border-[2px] border-solid rounded-[9px] h-2 bg-blue-1 p-0 ">
+                        </div>
+                    </div>
+
+                    <!-- skill 3 -->
+                    <div class="skill-heading-3">
+                        <h3 class="text-[13px] leading-[1.1rem] relative float-left mb-1 font-resume-skill italic">Python</h3>
+                        <div class="skill-3-value text-[12px] leading-[1.1rem] relative float-right mb-1 font-resume-skill italic">75%</div>
+                    </div>
+                    <div
+                        class="skill-container-3 relative inline-block border-[1px] border-solid border-border-1 rounded-[8px] box-border h-[10px] w-full mb-[8px]  ">
+                        <div
+                            class="skill-percentage-3 w-[75%] border-[2px] border-solid rounded-[9px] h-2 bg-blue-1 p-0 ">
+                        </div>
+                    </div>
+
+                    <!-- skill 4 -->
+                    <!-- <div class="skill-heading-4">
+                        <h3 class="text-[13px] leading-[1.1rem] relative float-left mb-1">C</h3>
+                        <div class="skill-4-value text-[10px] leading-[1.1rem] relative float-right mb-1">40%</div>
+                    </div>
+                    <div
+                        class="skill-container-4 relative inline-block border-[1px] border-solid border-border-1 rounded-[8px] box-border h-[10px] w-full mb-[8px]  ">
+                        <div
+                            class="skill-percentage-4 w-[40%] border-[2px] border-solid rounded-[9px] h-2 bg-blue-1 p-0 ">
+                        </div>
+                    </div> -->
+
+                    <!-- White Space -->
+                    <div class="pb-3 mb-3"></div>
+
+                    <!-- Area of Interest -->
+
+                    <div class="block-title-2 inline-block relative pb-2">
+                        <h3 class="relative text-[30px] font-resume-subhead">
+                            Area of
+                            <span class="text-red-800">
+                                Interest
+                            </span>
+                        </h3>
+                    </div>
+
+                    <ul class="keywords-1 pb-2 mb-2">
+                        <li
+                            class="inline-block bg-highlight-1 text-black rounded-[3px] px-[10px] py-[1px] my-[3px] mx-[2px] text-[14px] font-resume-skill-h">
+                            IOT
+                        </li>
+                        <li
+                            class="inline-block bg-highlight-1 text-black rounded-[3px] px-[10px] py-[1px] my-[3px] mx-[2px] text-[14px] font-resume-skill-h">
+                            Machine Learning
+                        </li>
+                        <li
+                            class="inline-block bg-highlight-1 text-black rounded-[3px] px-[10px] py-[1px] my-[3px] mx-[2px] text-[14px] font-resume-skill-h">
+                            DIY Projects
+
+                        </li>
+                        <li
+                            class="inline-block bg-highlight-1 text-black rounded-[3px] px-[10px] py-[1px] my-[3px] mx-[2px] text-[14px] font-resume-skill-h">
+                            Adruino
+                        </li>
+                        <li
+                            class="inline-block bg-highlight-1 text-black rounded-[3px] px-[10px] py-[1px] my-[3px] mx-[2px] text-[14px] font-resume-skill-h">
+                            ESP Boards
+                        </li>
+                    </ul>
+
+                    <!-- White space -->
+                    <div class="pb-[20px]"></div>
+
+                    <!-- Tools and Software -->
+                    <div class="block-title-2 inline-block relative pb-2 ">
+                        <h3 class="relative text-[30px] font-resume-subhead">
+                            Tools &
+                            <span class="text-red-800">
+                                Software
+                            </span>
+                        </h3>
+                    </div>
+
+                    <ul class="keywords-2">
+                        <li
+                            class="inline-block bg-highlight-1 text-black rounded-[3px] px-[10px] py-[1px] my-[3px] mx-[2px] text-[14px] font-resume-skill-h">
+                            VS Code
+                        </li>
+                        <li
+                            class="inline-block bg-highlight-1 text-black rounded-[3px] px-[10px] py-[1px] my-[3px] mx-[2px] text-[14px] font-resume-skill-h">
+                            Adruino IDE
+                        </li>
+                        <li
+                            class="inline-block bg-highlight-1 text-black rounded-[3px] px-[10px] py-[1px] my-[3px] mx-[2px] text-[14px] font-resume-skill-h">
+                            Thonny
+                        </li>
+                        <li
+                            class="inline-block bg-highlight-1 text-black rounded-[3px] px-[10px] py-[1px] my-[3px] mx-[2px] text-[14px] font-resume-skill-h">
+                            Github
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- White Space -->
+            <div class="pt-[50px] w-full"></div>
+            <!-- Certificates -->
+            <div class="row mt-1  max-w-full w-full sm:mb-2">
+                <div>
+                    <div class="block-title-2 inline-block relative pb-3 mb-4">
+                        <h3 class="relative text-[30px] z-[1] font-resume-subhead">Certificates</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row laptop:grid laptop:grid-cols-2 laptop:gap-3 sm:mx-5 ">
+                <!-- <div class="flex flex-wrap"> -->
+                {% for certificates in certificate.all %}
+                <div>
+                    <div class="certificate bg-slate-100 laptop:m-[1rem] sm:m-[-1rem] relative border-2 border-black border-solid rounded-[10px] laptop:w-[415px] laptop:h-[350px] sm:w-[280px] sm:h-[220px]">
+                        <div class="certificate-item m-[0.7rem]">
+                            <div class="certificate-image laptop:w-[390px] laptop:h-[290px] sm:w-[250px] sm:h-[200px] grid items-center justify-center content-center">
+                                <img class="laptop:w-[380px] laptop:h-[280px] sm:w-[250px] sm:h-[200px] rounded-[5px] " src="{{ certificates.image.url }}" alt="">
+                            </div>
+                            <div class="certificate-description">
+                                <p class="description m-[0.7rem] text-center text-[16px] font-resume-p-1">
+                                    {{ certificates.description }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                <!-- </div> -->
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- nav btn sec -->
+    <div
+        class="nav-btn laptop:hidden flex flex-col border-[1px] p-2 items-center float-right rounded-[40px] border-solid border-black fixed right-8 bottom-4 ring-2 bg-slate-100">
+        <!-- Next btn -->
+        <a href="projects">
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-[30px] w-[30px]" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path
+                        d="M4.555 5.168A1 1 0 003 6v8a1 1 0 001.555.832L10 11.202V14a1 1 0 001.555.832l6-4a1 1 0 000-1.664l-6-4A1 1 0 0010 6v2.798l-5.445-3.63z" />
+                </svg>
+
+            </button>
+        </a>
+
+
+        <!-- separate -->
+        <div class="p-2"></div>
+
+        <!-- Previous btn -->
+        <a href=" about">
+            <button class="prev-btn">
+                
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-[30px] w-[30px]" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path
+                        d="M8.445 14.832A1 1 0 0010 14v-2.798l5.445 3.63A1 1 0 0017 14V6a1 1 0 00-1.555-.832L10 8.798V6a1 1 0 00-1.555-.832l-6 4a1 1 0 000 1.664l6 4z" />
+                </svg>
+                <a href="/"></a>
+            </button>
+        </a>
+    </div>
+</section>
+
+{% endblock resume %}

@@ -1,0 +1,227 @@
+{% extends 'main/base.html' %}
+
+{% block navbar %}
+
+<li class="m-3 hover:text-white">
+    <a href="/" class="block relative p-2 hover:border-2 hover:rounded-[5px]">
+        <span class="">
+            <i class="fas fa-home block text-2xl"></i>
+        </span>
+        <span class="w-auto z-0 visible right-3 whitespace-nowrap px-[1rem] py-4 mt-10 font-ui-tabs">Home
+        </span>
+    </a>
+</li>
+<li class="m-3 text-white">
+    <a href="about" class="block relative p-2 border-2 rounded-[5px]">
+        <span class="">
+            <i class="fas fa-user block text-2xl"></i>
+        </span>
+        <span class="w-auto z-0 visible right-3 whitespace-nowrap px-[1.3rem] py-4 mt-10 font-ui-tabs">About Me
+        </span>
+    </a>
+</li>
+<li class="m-3 hover:text-white">
+    <a href="resume" class="block relative p-2 hover:border-2 hover:rounded-[5px]">
+        <span class="">
+            <!-- <i class="fas fa-university block text-2xl"></i> -->
+            <i class="fas fa-graduation-cap text-2xl"></i>
+        </span>
+        <span class="w-auto z-0 visible right-3 whitespace-nowrap px-[1rem] py-4 mt-10 font-ui-tabs">
+            Resume
+        </span>
+    </a>
+</li>
+<li class="m-3 hover:text-white">
+    <a href="projects" class="block relative p-2 hover:border-2 hover:rounded-[5px]">
+        <span class="">
+            <i class="fas fa-code block text-2xl"></i>
+        </span>
+        <span class="w-auto z-0 visible right-3 whitespace-nowrap px-[1rem] py-4 mt-10 font-ui-tabs">Projects
+        </span>
+    </a>
+</li>
+<li class="m-3 hover:text-white">
+    <a href="contact" class="block relative p-2 hover:border-2 hover:rounded-[5px]">
+        <span class="">
+            <i class="fas fa-address-book block text-2xl"></i>
+        </span>
+        <span class="w-auto z-0 visible right-3 whitespace-nowrap px-[1rem] py-4 mt-10 font-ui-tabs">Contact
+        </span>
+    </a>
+</li>
+<li></li>
+
+{% endblock navbar %}
+
+{% block about %}
+<section
+    class="home-page bg-resume-1 laptop:max-w-[calc(100%_-_300px)] laptop:float-right opacity-100 visible z-50 w-full h-screen px-[60px] pt-[60px] pb-[40px] overflow-y-auto">
+    <div class="page-title inline-block relative">
+        <h2 class="relative laptop:text-[2.5rem] z-40 pb-2 mb-2 sm:text-[2rem] font-common-heading">
+            About
+            <span class="text-rose-600"> Me </span>
+        </h2>
+    </div>
+    <div class="section-content">
+        <!-- Personal Information -->
+        <div class="flex">
+            <div class="laptop:grid laptop:grid-cols-2 laptop:gap-4 sm:flex sm:flex-col">
+                <div class="sm:mb-2">
+                    <p
+                        class="laptop:indent-5 laptop:leading-loose laptop:text-[1.2rem] sm:text-justify sm:break-normal sm:text-sm font-para-1">
+                        Currently I am in pre-final year of B.E in Electronics and
+                        Telecommunication Engineering. I am hobistic in coding, pcb design
+                        and web deveplopment.
+                    </p>
+                </div>
+                <div class="laptop:ml-1">
+                    <div class="info-list sm:text-[13px] ">
+                        <ul class="space-y-2">
+                            <li class="laptop:grid laptop:grid-cols-4 laptop:gap-1 sm:grid sm:grid-cols-4 sm:gap-2">
+                                <span class="text-sky-600 laptop:text-[19px] font-para-3"> Age </span>
+                                <span class="laptop:text-[15px] font-para-4"> 20 </span>
+                            </li>
+                            <li class="grid grid-cols-5 gap-1 sm:grid sm:grid-cols-4 sm:gap-2">
+                                <span class="col-span-1 text-sky-600 laptop:text-[19px] font-para-3"> Address </span>
+                                <span class="col-span-2 laptop:text-[15px] font-para-4">
+                                    Plot no 113, Ambegaon, Pune, Pawnanagar, Maharashtra, 410406
+                                </span>
+                            </li>
+                            <li class="grid grid-cols-5 gap-1 sm:grid sm:grid-cols-4 sm:gap-2">
+                                <span class="text-sky-600 laptop:text-[19px] font-para-3"> E-mail </span>
+                                <span class="laptop:text-[15px] font-para-4"> shubham.saamal@gmail.com </span>
+                            </li>
+                            <li class="grid grid-cols-5 gap-1 sm:grid sm:grid-cols-4 sm:gap-2">
+                                <span class="text-sky-600 laptop:text-[19px] font-para-3">Phone</span>
+                                <span class="laptop:text-[15px] font-para-4">9607448681</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Personal Information -->
+        <div class="pb-[50px]"></div>
+        <!-- What do I do -->
+        <div class="flex flex-wrap">
+            <div class="flex-grow-0 flex-shrink-0 basis-[100%] max-w-full">
+                <div class="block-title inline-block relative pb-3 mb-3">
+                    <h3 class="relative laptop:text-[2.5rem] z-[1] sm:text-[2rem] font-common-heading">
+                        What
+                        <span class="text-rose-500"> I Do </span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="laptop:flex laptop:flex-wrap laptop:pt-2">
+            <div class="laptop:grid laptop:grid-cols-2 laptop:gap-4">
+                <!-- Left Block -->
+                <div class="inner-1">
+                    <div class="info-list">
+                        <div
+                            class="info-list-block-1 pb-4 mb-4 border-2 border-solid border-black rounded-[5px] p-[8px] shadow-inner">
+                            <div class="info-icon">
+                                <span>
+                                    <i class="fas fa-laptop-code laptop:text-[1.9rem] sm:text-[19px]"></i>
+                                </span>
+                            </div>
+                            <div class="info-text">
+                                <h3 class="mb-1 mt-2 laptop:text-[25px] sm:text-[19px] font-abt-tit">Frontend Developer
+                                </h3>
+                                <p class="laptop:text-[15px] sm:text-sm font-abt-p">
+                                    Responsive website built for an optimal user experience that
+                                    achives your business goals.
+                                </p>
+                            </div>
+                        </div>
+                        <div
+                            class="info-list-block-2 pt-1 pb-4 mb-4 border-2 border-solid border-black rounded-[5px] p-[8px]">
+                            <div class="info-icon">
+                                <span>
+                                    <i class="fas fa-crosshairs laptop:text-[1.9rem] sm:text-[19px]"></i>
+                                </span>
+                            </div>
+                            <div class="info-text">
+                                <h3 class="mb-1 mt-2 laptop:text-[25px] sm:text-[19px] font-abt-tit">PCB Design</h3>
+                                <p class="laptop:text-[15px] sm:text-sm font-abt-p">
+                                    Making custom PCB from schematics to final PCB board of the
+                                    project.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Block -->
+                <div class="inner-2">
+                    <div class="info-list">
+                        <div
+                            class="info-list-block-1 pb-4 mb-4 border-2 border-solid border-black rounded-[5px] p-[8px]">
+                            <div class="info-icon">
+                                <span>
+                                    <i class="fas fa-cloud laptop:text-[1.9rem] sm:text-[19px]"></i>
+                                </span>
+                            </div>
+                            <div class="info-text">
+                                <h3 class="mb-1 mt-2 laptop:text-[25px] sm:text-[19px] font-abt-tit">Internet of Things
+                                </h3>
+                                <p class="laptop:text-[15px] sm:text-sm font-abt-p">
+                                    Making applications that connects with the internet, which makes
+                                    the life easier.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- <div class="info-list-block-2 pt-1 pb-4 mb-4">
+                            <div class="info-icon">
+                                <span>
+                                    <i class="fas fa-crosshairs text-[1.9rem]"></i>
+                                </span>
+                            </div>
+                            <div class="info-text">
+                                <h3 class="mb-1 mt-2 text-[25px]">PCB Design</h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat nemo dolor inventore maxime animi nostrum.
+                                </p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of "What do I do " -->
+    </div>
+
+    <!-- nav btn sec -->
+    <div
+        class="nav-btn laptop:hidden flex flex-col border-[1px] p-2 items-center float-right rounded-[40px] border-solid border-black fixed right-8 bottom-4 ring-2 bg-slate-100">
+        <!-- Next btn -->
+        <a href="resume">
+            <button>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-[30px] w-[30px]" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path
+                        d="M4.555 5.168A1 1 0 003 6v8a1 1 0 001.555.832L10 11.202V14a1 1 0 001.555.832l6-4a1 1 0 000-1.664l-6-4A1 1 0 0010 6v2.798l-5.445-3.63z" />
+                </svg>
+
+            </button>
+        </a>
+
+
+        <!-- separate -->
+        <div class="p-2"></div>
+
+        <!-- Previous btn -->
+        <a href="/">
+            <button class="prev-btn">
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-[30px] w-[30px]" viewBox="0 0 20 20"
+                    fill="currentColor">
+                    <path
+                        d="M8.445 14.832A1 1 0 0010 14v-2.798l5.445 3.63A1 1 0 0017 14V6a1 1 0 00-1.555-.832L10 8.798V6a1 1 0 00-1.555-.832l-6 4a1 1 0 000 1.664l6 4z" />
+                </svg>
+                <a href="/"></a>
+            </button>
+        </a>
+    </div>
+
+</section>
+{% endblock about %}

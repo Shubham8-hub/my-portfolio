@@ -1,0 +1,147 @@
+{% extends 'main/base.html' %}
+
+{% block navbar %}
+
+<li class="m-3 text-white">
+  <a href="" class="block relative p-2 border-2 rounded-[5px]">
+    <span class="">
+      <i class="fas fa-home block text-2xl"></i>
+    </span>
+    <span
+      class="w-auto z-0 visible right-3 whitespace-nowrap px-[1rem] py-4 mt-10 font-ui-tabs"
+      >Home
+    </span>
+  </a>
+</li>
+<li class="m-3 hover:text-white">
+  <a href="about" class="block relative p-2 hover:border-2 hover:rounded-[5px]">
+    <span class="">
+      <i class="fas fa-user block text-2xl"></i>
+    </span>
+    <span
+      class="w-auto z-0 visible right-3 whitespace-nowrap px-[1.3rem] py-4 mt-10 font-ui-tabs"
+      >About Me
+    </span>
+  </a>
+</li>
+<li class="m-3 hover:text-white">
+  <a
+    href="resume"
+    class="block relative p-2 hover:border-2 hover:rounded-[5px]"
+  >
+    <span class="">
+      <!-- <i class="fas fa-university block text-2xl"></i> -->
+      <i class="fas fa-graduation-cap text-2xl"></i>
+    </span>
+    <span
+      class="w-auto z-0 visible right-3 whitespace-nowrap px-[1rem] py-4 mt-10 font-ui-tabs"
+    >
+      Resume
+    </span>
+  </a>
+</li>
+<li class="m-3 hover:text-white">
+  <a
+    href="projects"
+    class="block relative p-2 hover:border-2 hover:rounded-[5px]"
+  >
+    <span class="">
+      <i class="fas fa-code block text-2xl"></i>
+    </span>
+    <span
+      class="w-auto z-0 visible right-3 whitespace-nowrap px-[1rem] py-4 mt-10 font-ui-tabs"
+      >Projects
+    </span>
+  </a>
+</li>
+<li class="m-3 hover:text-white">
+  <a
+    href="contact"
+    class="block relative p-2 hover:border-2 hover:rounded-[5px]"
+  >
+    <span class="">
+      <i class="fas fa-address-book block text-2xl"></i>
+    </span>
+    <span
+      class="w-auto z-0 visible right-3 whitespace-nowrap px-[1rem] py-4 mt-10 font-ui-tabs"
+      >Contact
+    </span>
+  </a>
+</li>
+<li></li>
+
+
+{% endblock navbar %} 
+
+{% block home %}
+<section
+  class="home-page  opacity-100 visible z-50 w-full h-screen p-60 flex bg-white "
+>
+  <div
+    class="section-content align-middle w-full flex justify-center flex-row flex-wrap items-center text-center"
+  >
+    <div class="row w-full flex flex-wrap justify-center">
+      <div class="row-col">
+        <div class="title-block laptop:absolute text-center">
+          <div class="title-name">
+            <h2 class="text-[3rem] font-bold mb-1 font-tit">Shubham Samal</h2>
+          </div>
+
+          <div class="title-skill" id="slider">
+            <ul>
+              <li>
+                <div
+                  class="title-name flex flex-row justify-evenly transition-all text-[1.3rem] space-x-1 font-sub-tit"
+                >
+                  <h2>Electronics Engineer</h2>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- nav btn sec -->
+  <div
+    class="nav-btn laptop:hidden flex flex-col border-[1px] p-2 items-center float-right rounded-[40px] border-solid border-black ring-2 fixed right-8 bottom-4 bg-slate-100"
+  >
+    <!-- Next btn -->
+    <a href="about">
+      <button>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-[30px] w-[30px]"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            d="M4.555 5.168A1 1 0 003 6v8a1 1 0 001.555.832L10 11.202V14a1 1 0 001.555.832l6-4a1 1 0 000-1.664l-6-4A1 1 0 0010 6v2.798l-5.445-3.63z"
+          />
+        </svg>
+      </button>
+    </a>
+
+    <!-- separate -->
+    <div class="p-2"></div>
+
+    <!-- previous btn -->
+    <a href="contact">
+      <button class="prev-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-[30px] w-[30px]"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            d="M8.445 14.832A1 1 0 0010 14v-2.798l5.445 3.63A1 1 0 0017 14V6a1 1 0 00-1.555-.832L10 8.798V6a1 1 0 00-1.555-.832l-6 4a1 1 0 000 1.664l6 4z"
+          />
+        </svg>
+        <a href="/"></a>
+      </button>
+    </a>
+  </div>
+</section>
+{% endblock home %}

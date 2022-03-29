@@ -1,0 +1,276 @@
+{% load static %}
+{% load tailwind_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	{% tailwind_css %}
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Shubham Samal - Portfolio</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" type="image/png" href="{% static '/images/favicon.png' %}" />
+	<link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+	<!-- Custom Files -->
+	<!-- Custom css files -->
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=EB+Garamond:ital@1&family=Fredoka+One&family=Roboto+Slab&display=swap" rel="stylesheet"> -->
+	<!-- Head-1 Css-1 -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap" rel="stylesheet">
+	<!-- head-2 css-2 -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@1,300&display=swap" rel="stylesheet">
+	<!-- ui link css-3 -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+	<!-- Home Page css -->
+	<!-- Title css -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@600&display=swap" rel="stylesheet">
+	<!-- Sub title css -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@600&display=swap" rel="stylesheet">
+	<!-- About Page Css -->
+	<!-- Heading ie. About Me, What I do -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Judson&display=swap" rel="stylesheet">
+	<!--  -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
+	<!-- Para - 1  css -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+	<!-- Para - 2 css (what do i do Paragraph)-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Karma&display=swap" rel="stylesheet">
+	<!-- Para - 3 css -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&display=swap" rel="stylesheet">
+	<!-- Para - 4 css -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+	<!-- About title css (What do I do) -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Faustina:wght@600&display=swap" rel="stylesheet">
+
+	<!-- Resume Page Css -->
+	<!-- Heading -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Ramaraja&display=swap" rel="stylesheet">
+	<!-- Education para -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Domine:wght@600&display=swap" rel="stylesheet">
+	<!--  -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Amiri:ital@1&display=swap" rel="stylesheet">
+	<!--  -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500&display=swap" rel="stylesheet">
+
+	<!-- Skill font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&display=swap" rel="stylesheet">
+
+	<!-- Skill highlight -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Padauk&display=swap" rel="stylesheet">
+
+	<!-- Project fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noticia+Text&display=swap" rel="stylesheet">
+
+	<!-- common heading -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Changa:wght@200&display=swap" rel="stylesheet">
+
+
+
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+	<div id="preloader">
+
+	</div>
+<style>
+	#preloader{
+		background: #000 url("/static/images/loader.gif") no-repeat center;
+		background-size: 5%;
+		height: 100vh;
+		width: 100%;
+		position: fixed;
+		z-index: 100;
+	}
+</style>
+
+
+
+
+	<div class="page ">
+		<div class=" main-page ">
+			<!-- Previously header section was here -->
+			<svg xmlns="http://www.w3.org/2000/svg" class="h-[15px] w-[15px] m-5 absolute cursor-pointer" onclick="Open()"
+				viewBox="0 0 20 20" fill="currentColor">
+				<path fill-rule="evenodd"
+					d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+					clip-rule="evenodd" />
+			</svg>
+			<!-- new code here -->
+			<div
+				class="sidebar fixed top-0 bottom-0 laptop:left-0 w-[300px] left-[-300px]  overflow-y-auto bg-gradient-to-b from-indigo-400 to-violet-700 z-50">
+				<!-- Profile Section -->
+				<div class="profile-content  flex">
+					<div class="mt-10">
+						<div class="profile-photo relative w-[150px] z-10 mt-0 mb-8   mx-auto">
+							<img class="max-w-full border-2 border-white border-solid rounded-[20rem]" src="{% static '/images/profile_img.jpg' %}"
+								alt="Shubham Samal">
+						</div>
+						<div class="profile-titles m-5">
+							<h2
+								class="heading laptop:text-[36px] sm:text-[25px] mx-0 mt-1 mb-2 leading-5 text-center font-extrabold font-[head-1]">
+								Shubham Samal</h2>
+							<h4 class="heading-1 mx-0 mt-2 leading-[3.25rem] text-[18px] text-center font-head-2">
+								Electronic
+								Engineer
+							</h4>
+							<!-- Social links -->
+							<div>
+								<div class="social-links mt-[0.6rem] mb-5 mx-0 ">
+									<ul class="social-list text-center list-none p-0 space-x-3">
+										<li class=" inline-block">
+											<a href="https://www.linkedin.com/in/shubham-samal-107448230"
+												target="_blank"
+												class="text-[25px] h-[30px] w-[30px] block leading-[30px] hover:text-white text-center p-0 radius-[20px]">
+												<span>
+													<i class="fab fa-linkedin "></i>
+												</span>
+											</a>
+										</li>
+										<li class=" inline-block">
+											<a href="https://www.youtube.com/channel/UC3leIXgqz1eNwwJQHE-ksgw/featured"
+												target="_blank"
+												class="text-[25px] h-[30px] w-[30px] block leading-[30px] hover:text-white text-center p-0 radius-[20px]">
+												<span>
+													<i class="fab fa-youtube"></i>
+												</span>
+											</a>
+										</li>
+										<li class=" inline-block">
+											<a href="https://github.com/Shubham8-hub" target="_blank"
+												class="text-[25px] h-[30px] w-[30px] block leading-[30px] hover:text-white text-center p-0 radius-[20px]">
+												<span>
+													<i class="fab fa-github"></i>
+												</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-[15px] w-[15px] cursor-pointer mt-3 laptop:hidden  m-5 "
+						onclick="Open()" viewBox="0 0 20 20" fill="currentColor">
+						<path fill-rule="evenodd"
+							d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+							clip-rule="evenodd" />
+					</svg>
+				</div>
+				<hr class="my-2 text-lime-400">
+				<ul class="space-y-4">
+					{% block navbar %}
+
+					{% endblock navbar %}
+				</ul>
+			</div>
+			<!-- new code end here -->
+			<div class="">
+				<div class="content-section w-full ">
+
+					<!-- Home page -->
+					{% block home %}
+
+					{% endblock home %}
+					<!-- About Page -->
+					{% block about %}
+
+					{% endblock about %}
+					<!-- resume Page -->
+					{% block resume %}
+
+					{% endblock resume %}
+					<!-- projects page -->
+					{% block projects %}
+
+					{% endblock projects %}
+					<!-- blog page -->
+					{% block blog %}
+
+					{% endblock blog %}
+					<!-- contact page -->
+					{% block contact %}
+
+					{% endblock contact %}
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Javascript files -->
+
+	<script>
+		function Open() {
+			document.querySelector('.sidebar').classList.toggle('left-[-300px]');
+		}
+	</script>
+	<!-- recaptcha js file -->
+	<script src="https://www.google.com/recaptcha/api.js"></script>
+
+	<!-- Loader -->
+	<script>
+		var loader = document.getElementById("preloader");
+		window.addEventListener("load", function(){
+			loader.style.display = "none";
+		})
+		</script>
+</body>
+
+</html>

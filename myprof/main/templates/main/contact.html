@@ -1,0 +1,271 @@
+{% extends 'main/base.html' %} {% block navbar %}
+
+<li class="m-3 hover:text-white">
+  <a href="/" class="block relative p-2 hover:border-2 hover:rounded-[5px]">
+    <span class="">
+      <i class="fas fa-home block text-2xl"></i>
+    </span>
+    <span
+      class="w-auto z-0 visible right-3 whitespace-nowrap px-[1rem] py-4 mt-10 font-ui-tabs"
+      >Home
+    </span>
+  </a>
+</li>
+<li class="m-3 hover:text-white">
+  <a href="about" class="block relative p-2 hover:border-2 hover:rounded-[5px]">
+    <span class="">
+      <i class="fas fa-user block text-2xl"></i>
+    </span>
+    <span
+      class="w-auto z-0 visible right-3 whitespace-nowrap px-[1.3rem] py-4 mt-10 font-ui-tabs"
+      >About Me
+    </span>
+  </a>
+</li>
+<li class="m-3 hover:text-white">
+  <a
+    href="resume"
+    class="block relative p-2 hover:border-2 hover:rounded-[5px]"
+  >
+    <span class="">
+      <!-- <i class="fas fa-university block text-2xl"></i> -->
+      <i class="fas fa-graduation-cap text-2xl"></i>
+    </span>
+    <span
+      class="w-auto z-0 visible right-3 whitespace-nowrap px-[1rem] py-4 mt-10 font-ui-tabs"
+    >
+      Resume
+    </span>
+  </a>
+</li>
+<li class="m-3 hover:text-white">
+  <a
+    href="projects"
+    class="block relative p-2 hover:border-2 hover:rounded-[5px]"
+  >
+    <span class="">
+      <i class="fas fa-code block text-2xl"></i>
+    </span>
+    <span
+      class="w-auto z-0 visible right-3 whitespace-nowrap px-[1rem] py-4 mt-10 font-ui-tabs"
+      >Projects
+    </span>
+  </a>
+</li>
+<li class="m-3 text-white">
+  <a href="contact" class="block relative p-2 border-2 rounded-[5px]">
+    <span class="">
+      <i class="fas fa-address-book block text-2xl"></i>
+    </span>
+    <span
+      class="w-auto z-0 visible right-3 whitespace-nowrap px-[1rem] py-4 mt-10 font-ui-tabs"
+      >Contact
+    </span>
+  </a>
+</li>
+<li></li>
+
+{% endblock navbar %} {% block contact %}
+<section
+  class="home-page bg-resume-1 opacity-100 visible z-50 w-full h-screen laptop:max-w-[calc(100%_-_300px)] laptop:float-right laptop:p-[60px] sm:px-[30px] sm:py-[30px] overflow-y-auto"
+>
+  <div class="page-title inline-block relative">
+    <h2 class="relative text-[2.5rem] z-[1] pb-2 mb-2 font-common-heading">
+      Contact
+      <span class="text-red-1"> Info </span>
+    </h2>
+  </div>
+  <!-- Section Content -->
+  <div class="section-content">
+    <div
+      class="row laptop:grid laptop:grid-cols-3 laptop:gap-[1.8rem] sm:flex sm:flex-col sm:flex-wrap"
+    >
+      <!-- Left Part -->
+      <div class="col-span-1">
+        <!-- location -->
+        <div
+          class="info-block-1 relative text-center w-full block mb-[15px] px-[10px] py-[20px] border-[1px] border-solid border-black rounded-[5px]"
+        >
+          <i class="fas fa-map-marker-alt"></i>
+          <h4 class="text-[15px] mt-2 font-para-4">Lonavala</h4>
+        </div>
+        <!-- Contact -->
+        <div
+          class="info-block-1 relative text-center w-full block mb-[15px] px-[10px] py-[20px] border-[1px] border-solid border-black rounded-[5px]"
+        >
+          <i class="fas fa-phone-alt"></i>
+          <h4 class="text-[15px] mt-2 font-para-4">9607448681</h4>
+        </div>
+        <!-- Email -->
+        <div
+          class="info-block-1 relative text-center w-full block mb-[15px] px-[10px] py-[20px] border-[1px] border-solid border-black rounded-[5px]"
+        >
+          <i class="fas fa-envelope"></i>
+          <h4 class="text-[15px] mt-2 font-para-4">shubham.saamal@gmail.com</h4>
+        </div>
+        <!-- Linkedin -->
+        <div
+          class="info-block-1 relative text-center w-full block mb-[15px] px-[10px] py-[20px] border-[1px] border-solid border-black rounded-[5px]"
+        >
+          <i class="fab fa-linkedin"></i>
+          <h4 class="text-[15px] mt-2 font-para-4">Shubham Samal</h4>
+        </div>
+      </div>
+      <!-- Right Part -->
+      <div class="col-span-2">
+        <!-- map section -->
+        <div class="map w-full h-[140px] mb-[35px]">
+          <div class="location-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3779.5036231325953!2d73.50485976472334!3d18.68625763731265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2a9ab833d64df%3A0x267f324a206b066d!2sPawnanagar%2C%20Maharashtra%20410406!5e0!3m2!1sen!2sin!4v1646490410119!5m2!1sen!2sin"
+              class="loc-map w-full max-w-full m-0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- message section -->
+        <div class="page-title inline-block relative">
+          <h2
+            class="relative text-[2.5rem] z-[1] pb-2 mb-2 font-common-heading"
+          >
+            Contact
+            <span class="text-red-1"> Me </span>
+          </h2>
+        </div>
+
+        <!--  -->
+        <div class="para">
+          <p class="font-para-3">
+            I am available to work on your projects and bring your ideas to
+            life.
+          </p>
+        </div>
+        <!-- form -->
+        <form class="row" action="saveEnquiry" method="post" role="form">
+          {% csrf_token %}
+          <div class="form-2-group laptop:mt-5 sm:mt-4">
+            <div class="form-feilds">
+              <div class="sm:flex sm:flex-col">
+                <!-- left part -->
+                <div
+                  class="left-column laptop:w-[50%] sm:w-full float-left -mt-[10px]"
+                >
+                  <div
+                    class="name-part relative grid justify-start justify-items-start mb-[15px]"
+                  >
+                    <label
+                      class="name relative pb-3 font-resume-subhead text-[1rem]"
+                      for="name-input"
+                      >Name</label
+                    >
+                    <input
+                      type="text"
+                      name="name-1"
+                      class="form-control w-[18rem] rounded-[10px] caret-black"
+                      id="name-input"
+                      placeholder="Enter your Name"
+                      required
+                    />
+                  </div>
+
+                  <div
+                    class="email-part relative grid justify-start justify-items-start mb-[15px]"
+                  >
+                    <label
+                      class="email relative pb-3 font-resume-subhead text-[1rem]"
+                      for="email-input"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control caret-black w-[18rem] rounded-[10px]"
+                      id="email-input"
+                      placeholder="Enter your E-mail "
+                    />
+                  </div>
+                </div>
+                <!-- right part  -->
+                <div
+                  class="right-part laptop:w-[50%] sm:w-full float-right grid -mt-[10px] space-y-2"
+                >
+                  <label
+                    for="message-input"
+                    class="form-label font-resume-subhead text-[1rem]"
+                    >Message</label
+                  >
+                  <textarea
+                    class="form-control rounded-[10px] caret-black"
+                    name="msg"
+                    id="message-input"
+                    rows="5"
+                    placeholder="Enter Your message/query/discussion here"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="recapcha-sec mt-8">
+                <div
+                  class="g-recaptcha my-[10px]"
+                  data-sitekey="6Ld8WLkeAAAAAGzP4Aur1uaeNcQlictB9KFx129S"
+                ></div>
+              </div>
+              <div class="sub-btn grid justify-start w-full">
+                <button
+                  class="btn-form ring-2 ring-purple-500 ring-offset-4 ring-offset-purple-100 laptop:mt-[25px] w-[15rem] p-[10px] rounded-[5rem] font-contact-btn border-2 bg-aqua-1 border-solid border-sky-blue hover:bg-white"
+                  type="submit"
+                >
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- nav btn sec -->
+  <div
+    class="nav-btn laptop:hidden flex flex-col border-[1px] p-2 items-center float-right rounded-[40px] border-solid border-black fixed right-8 bottom-4 ring-2 z-[90] bg-slate-100"
+  >
+    <!-- Next btn -->
+    <a href="/" aria-disabled="true">
+      <button>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-[30px] w-[30px]"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            d="M4.555 5.168A1 1 0 003 6v8a1 1 0 001.555.832L10 11.202V14a1 1 0 001.555.832l6-4a1 1 0 000-1.664l-6-4A1 1 0 0010 6v2.798l-5.445-3.63z"
+          />
+        </svg>
+      </button>
+    </a>
+
+    <!-- separate -->
+    <div class="p-2"></div>
+
+    <!-- Previous btn -->
+    <a href="projects">
+      <button class="prev-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-[30px] w-[30px]"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            d="M8.445 14.832A1 1 0 0010 14v-2.798l5.445 3.63A1 1 0 0017 14V6a1 1 0 00-1.555-.832L10 8.798V6a1 1 0 00-1.555-.832l-6 4a1 1 0 000 1.664l6 4z"
+          />
+        </svg>
+        <a href="/"></a>
+      </button>
+    </a>
+  </div>
+</section>
+{% endblock contact %}

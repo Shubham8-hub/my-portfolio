@@ -1,0 +1,83 @@
+{% extends 'main/base.html' %}
+
+{% block navbar %}
+
+<li class="p-3">
+    <a href="/" class="block relative p-2">
+        <span>
+            <i class="fas fa-home block text-2xl"></i>
+        </span>
+        <span
+            class="absolute w-auto z-0 visible right-3 whitespace-nowrap -top-1/2 px-3 py-4 mt-10">Home
+        </span>
+    </a>
+</li>
+<li class="p-3">
+    <a href="about" class="block relative p-2">
+        <span>
+            <i class="fas fa-user block text-2xl"></i>
+        </span>
+        <span
+            class="absolute w-auto z-0 visible right-3 whitespace-nowrap -top-1/2 px-0 py-4 mt-10">About
+            Me
+        </span>
+    </a>
+</li>
+        {% comment %} <span>
+            <i class="fas fa-university block text-2xl"></i>
+        </span>
+        <span
+            class="absolute w-auto z-0 visible right-3 whitespace-nowrap -top-1/2 px-0 py-4 mt-10">Education
+        </span> {% endcomment %}
+<li class="p-3">
+    <a href="resume" class="block relative p-2">
+        <span>
+            <!-- <i class="fas fa-university block text-2xl"></i> -->
+            <i class="fas fa-graduation-cap text-2xl"></i>
+        </span>
+        <span class="absolute w-auto z-0 visible right-3 whitespace-nowrap -top-1/2 px-0 py-4 mt-10">
+            Resume
+        </span>
+    </a>
+</li>
+<li class="p-3">
+    <a href="projects" class="block relative p-2">
+        <span>
+            <i class="fas fa-code block text-2xl"></i>
+        </span>
+        <span
+            class="absolute w-auto z-0 visible right-3 whitespace-nowrap -top-1/2 px-1 py-4 mt-10">Projects
+        </span>
+    </a>
+</li>
+<li class="p-3">
+    <a href="blog" class="block relative p-2">
+        <span>
+            <i class="fas fa-book block text-2xl"></i>
+        </span>
+        <span
+            class="absolute w-auto z-0 visible right-3 whitespace-nowrap -top-1/2 px-3 py-4 mt-10">Blogs
+        </span>
+    </a>
+</li>
+<li class="p-3">
+    <a href="contact" class="block relative p-2">
+        <span>
+            <i class="fas fa-address-book block text-2xl"></i>
+        </span>
+        <span
+            class="absolute w-auto z-0 visible right-3 whitespace-nowrap -top-1/2 px-2 py-4 mt-10">Contact
+        </span>
+    </a>
+</li>
+<li></li>
+
+{% endblock navbar %}
+
+{% block blog %}
+<section class="home-page bg-stone-300 absolute opacity-100 visible z-50 w-full h-full p-60">
+    <h2>
+        This is blog pageS
+    </h2>
+</section>
+{% endblock blog %} 
